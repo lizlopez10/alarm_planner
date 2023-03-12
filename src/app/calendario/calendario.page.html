@@ -1,0 +1,34 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="tertiary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding" [routerLink]="['/lista-categorias']" routerLinkActive="router-link-active" >Categorías</ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Calendario</ion-title>
+      </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <div class="headerdate">
+      <ion-icon name="alarm-outline" size="large" class="buttonIcon" [style.color]="'#40E0D0'"></ion-icon>
+      <h5 class="subtitle">Fecha Hoy: {{currentDate}}</h5>
+      <button [routerLink]="['/nueva-tarea']" routerLinkActive="router-link-active" class="buttonIcon">
+        <ion-icon name="add-circle-outline" size="large" class="iconButton" [style.color]="'#F06489'"></ion-icon> 
+      </button>
+    </div>
+    <hr class="separador"/>
+    <hr class="separadorAbajo"/>
+    <ion-calendar [(ngModel)]="date"
+        (onChange)="onChange($event)"
+        [format]="'YYYY-MM-DD'"
+        >
+      </ion-calendar>
+  </ion-content>
+</div>

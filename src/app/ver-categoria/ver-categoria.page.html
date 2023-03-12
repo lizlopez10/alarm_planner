@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-back-outline" size="large" [routerLink]="['/lista-categorias']" routerLinkActive="router-link-active" ></ion-icon>
+    </ion-buttons>
+    <ion-title>Nombre de la categoría</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon name="pencil" size="large" [routerLink]="['/editar-categoria']" routerLinkActive="router-link-active" ></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon name="trash" size="large" (click)="presentAlert()"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="divDescripcion">
+    <p>Descripción:</p>
+    <p>Esta es una nueva categoría que fue creada como prueba para los wireframes de la aplicación móvil. </p>
+  </div>
+  <img src="../../assets/image.png" />
+
+</ion-content>

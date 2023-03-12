@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="headerdate">
+      <ion-icon name="arrow-back-outline" size="large" [routerLink]="['/calendario']" routerLinkActive="router-link-active" ></ion-icon>
+    </div>    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="headerdate">
+    <h1 class="subtitle">Categorías</h1>
+    <button [routerLink]="['/nueva-categoria']" routerLinkActive="router-link-active" class="buttonIcon">
+      <ion-icon name="add-circle-outline" size="large" class="iconButton" [style.color]="'#F06489'"></ion-icon> 
+    </button>
+  </div>
+  <hr class="separador"/>
+  <hr class="separadorAbajo"/>
+  <div id="listaCategorias">
+    <div class="itemCategoria">    
+        <ion-icon name="pin" size="large"[style.color]='"#40E0D0"'></ion-icon>   
+        <ion-label [routerLink]="['/ver-categoria']" routerLinkActive="router-link-active"
+        >General</ion-label>
+    </div>    
+    <div class="itemCategoria">    
+      <ion-icon name="heart" size="large"[style.color]="'#AC202D'"></ion-icon>   
+      <ion-label [routerLink]="['/ver-categoria']" routerLinkActive="router-link-active"
+      >Personal</ion-label>
+    </div>
+    <div class="itemCategoria">    
+      <ion-icon name="briefcase" size="large"[style.color]="'#2CB5FF'"></ion-icon>   
+      <ion-label [routerLink]="['/ver-categoria']" routerLinkActive="router-link-active"
+      >Trabajo</ion-label>
+    </div>
+    <div class="itemCategoria">    
+      <ion-icon name="home" size="large"[style.color]="'#FFE666'"></ion-icon>   
+      <ion-label [routerLink]="['/ver-categoria']" routerLinkActive="router-link-active"
+      >Hogar</ion-label>
+    </div>
+  </div>
+</ion-content>

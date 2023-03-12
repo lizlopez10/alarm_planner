@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-back-outline" size="large" [routerLink]="['/lista-categorias']" routerLinkActive="router-link-active" ></ion-icon>
+    </ion-buttons>
+    <ion-title>Editar: Nombre categoría</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="container">
+  <p></p>
+  <form>
+    <div class="Icon-inside">
+      <input type="text" placeholder="Nombre">
+    </div>
+    <div class="Icon-inside">
+      <input type="text" placeholder="Descripción">
+    </div>
+    <img src="../../assets/image.png" />
+    
+    <div>
+      <ion-button class="iconButton" [routerLink]="['/lista-categorias']" routerLinkActive="router-link-active">Guardar</ion-button>
+    </div>
+  </form>
+</ion-content>

@@ -1,0 +1,131 @@
+#container {
+    text-align: center;
+    background-color: #B0E0E6;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 20px;
+  }
+  
+  #logo{
+    margin: 10px;
+    width: 40%;
+  }
+  .form-group{
+    height: 55px;
+    border-color: #2CB5FF;
+  }
+  .inputIcon{
+    background-color: white;
+    border: 1px solid #2CB5FF;
+    max-width: 300px;
+    place-items: center;
+    height: 55px ;
+    margin-bottom: 20px ;  
+  }
+  
+  #formulario{
+    margin: 20px;
+    align-content: center;
+    display: inline-block;
+  }
+  
+  .iconInput{
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .textInput{
+    padding: 10px;
+    text-align: center;
+  }
+  
+  form {
+    padding:20px;
+    font-weight:bold;
+    margin:10px;
+    border-radius:20px;
+   }
+  
+   input {
+    padding: 15px;
+    margin:4px;
+    box-sizing: border-box;
+    padding-left:10px;
+    border: 1px solid #2CB5FF;
+   }
+  
+   .Icon-inside {
+    position:relative;
+   }
+  
+   .Icon-outside {
+    position:relative;
+   }
+  
+   .Icon-outside i {
+    position:absolute;
+    margin-left:-6px;
+    top:4px;
+    padding:17px 15px;
+    color:#30A3F1;
+    background:black;
+   }
+  
+   .buttonForm{
+    width: 25%;
+    margin-top: 20px;
+   }
+
+   .separador {
+    background-color: black;
+   }
+   .separadorAbajo {
+    background-color: black;
+    margin: 5px;
+   }
+
+   .dropdown{
+    display: inline-flex;
+    width: 51%;
+    padding: 1px;
+    margin:4px;
+    box-sizing: border-box;
+    padding-left:10px;
+    border: 1px solid #2CB5FF;
+   }
+   p{
+    text-align: left;
+   }
+   .textLabel{
+    width: 50%;
+    display: inline-flex;
+   }
+   .iconButton{
+    background-color: white;
+    justify-content: right;
+    margin-top: 60px;
+    }
+    .buttonwithicon{
+        width: 23%;
+        margin: 15px;
+        background-color: white;
+        border: 1px solid #2CB5FF;
+    }
+    .iniciar{
+        background-color: #2CB5FF;
+        border-color: white;
+    }
+    .headerdate{
+      width: 100%;
+      display: inline-flex;
+      padding-left: 10px;
+  }
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 40%;
+}

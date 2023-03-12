@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="headerdate">
+      <ion-icon name="arrow-back-outline" size="large" [routerLink]="['/calendario']" routerLinkActive="router-link-active" ></ion-icon>
+      <ion-title>{{date}}</ion-title>
+    </div>    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="headerdate">
+    <h1 class="subtitle">Lista de tareas</h1>
+    <button [routerLink]="['/nueva-tarea']" routerLinkActive="router-link-active" class="buttonIcon">
+      <ion-icon name="add-circle-outline" size="large" class="iconButton" [style.color]="'#F06489'"></ion-icon> 
+    </button>
+  </div>
+  <div id="listaTareas">
+    <div class="itemCheck">      
+        <ion-label [routerLink]="['/ver-tarea']" routerLinkActive="router-link-active" >Nombre nueva tarea 1</ion-label>
+        <ion-checkbox slot="start"></ion-checkbox>      
+
+    </div>
+    
+    <div class="itemCheck">      
+      <ion-label [routerLink]="['/ver-tarea']" routerLinkActive="router-link-active" >Nombre nueva tarea 2</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </div>
+    <div class="itemCheck">      
+      <ion-label [routerLink]="['/ver-tarea']" routerLinkActive="router-link-active" >Nombre nueva tarea 3</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox> 
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <ion-content [fullscreen]="true" id="fullcontainer">  
+    <div id="container">
+      <img id="logo" src="../../assets/applogo_alarm.png"/>
+      <hr class="separador"/>
+      <hr class="separadorAbajo"/>
+      <p></p>
+      <form>
+        <div class="Icon-inside">
+          <input type="text" placeholder="Usuario">
+        </div>
+        <div class="Icon-inside">
+          <input type="text" placeholder="Nombre">
+        </div>
+        <div class="Icon-inside">
+          <input type="text" placeholder="Apellido">
+        </div>
+        <div class="Icon-inside">
+          <input type="text" placeholder="Email">
+        </div>
+        <div class="Icon-inside">
+          <input type="password" placeholder="Contraseña">
+        </div>
+        <div class="Icon-inside">
+          <input type="password" placeholder="Confirmar contraseña">
+        </div>
+        <div class="form-group">
+          <ion-button id="iniciar" color="danger" class="buttonForm" [routerLink]="['/calendario']" routerLinkActive="router-link-active" >Iniciar</ion-button>
+        </div>
+      </form>
+    </div>
+  </ion-content>
+</ion-content>

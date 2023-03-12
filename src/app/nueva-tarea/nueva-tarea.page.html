@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-back-outline" size="large" [routerLink]="['/calendario']" routerLinkActive="router-link-active" ></ion-icon>
+    </ion-buttons>
+    <ion-title>Crear nueva tarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="container">
+  <p></p>
+  <form>
+    <div class="Icon-inside">
+      <input type="text" placeholder="Nombre">
+    </div>
+    <div class="Icon-inside">
+      <input type="text" placeholder="Descripción">
+    </div>
+    <ion-list class="dropdown">
+      <ion-item>
+        <ion-select placeholder="Categoría">
+          <ion-select-option value="general">General</ion-select-option>
+          <ion-select-option value="personal">Personal</ion-select-option>
+          <ion-select-option value="trabajo">Trabajo</ion-select-option>
+          <ion-select-option value="hogar">Hogar</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-item id="open-modal3">
+      <ion-label>Hora</ion-label>
+    </ion-item>
+    <ion-modal trigger="open-modal3" [cssClass]="'bottom-end'">
+      <ng-template>
+        <ion-datetime
+          presentation="time"
+          [(ngModel)]="dateExample"
+          size="cover"
+          [showDefaultButtons]="true"
+        ></ion-datetime>
+      </ng-template>
+    </ion-modal>
+    <div class="textLabel">
+      <p>Puedes agregar foto o audio para que detalles más la tarea</p>
+
+    </div>
+    <div class="Icon-inside">
+      <button class="buttonwithicon">
+        <ion-icon name="camera-sharp" size="large" class="iconButton"></ion-icon>
+      </button>
+      <button class="buttonwithicon">
+        <ion-icon name="mic" size="large" class="iconButton"></ion-icon>
+      </button>
+    </div>
+    <div>
+      <ion-button  [routerLink]="['/lista-tareas']" routerLinkActive="router-link-active">Crear</ion-button>
+    </div>
+  </form>
+  
+</ion-content>
